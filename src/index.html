@@ -1,16 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <title>Profile Page</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=open+sans:400,600" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>Profile Page</h1>  
+  <div class="page">
+    <header class="page__header">
+      <a href="#" class="logo">
+        <img src="#" alt="wrike" class="logo__img">
+      </a>
+    </header>
+    <main class="page__wrapper">
+      <div class="page__sidebar sidebar">
+        <div class="sidebar__menu side-menu">
+          <div class="side-menu__title">Personal settings</div>
+          <ul class="side-menu__list">
+            <li class="side-menu__list-item side-menu__list-item--active">
+              <a href="#">Profile details</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Account info</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Email preferences</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Work schedule</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Password & security</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Apps access</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="devider">
+        <div class="sidebar__menu side-menu">
+          <div class="side-menu__title">Account managment</div>
+          <ul class="side-menu__list">
+            <li class="side-menu__list-item">
+              <a href="#">Subscription</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Billing</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Users & groups</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Request form builder</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Custom workflows</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Activity reports</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Calendars</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Account settings</a>
+            </li>
+            <li class="side-menu__list-item">
+              <a href="#">Advanced security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page__content user-profile">
+
+        <section class="user-profile__section">
+          <h1 class="user-profile__title">Profile details</h1>
+
+          <form class="user-profile-form" action="#" method="POST">
+            <div class="user-profile-info">
+              <div class="user-profile-info__avatar">
+                <img src="#" alt="user" class="user-profile-info__logo">
+              </div>
+              <div class="user-profile-info__description">
+                <span class="user-profile-info__name">Jhon Smith</span>
+                <span class="user-profile-info__position">UI developer (crafting Team)</span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="text" name="firstName">
+                  <span class="input-text__label">First name</span>
+                </label>
+              </div>
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="text" name="lastName">
+                  <span class="input-text__label">Last name</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="text" name="companyName">
+                  <span class="input-text__label">Company name</span>
+                </label>
+              </div>
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="text" name="job">
+                  <span class="input-text__label">Job title</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="text" name="location">
+                  <span class="input-text__label">Location</span>
+                </label>
+              </div>
+              <div class="form__column">
+                <label class="input-text">
+                  <input class="input-text__control" type="tel" name="phone">
+                  <span class="input-text__label">Phone number</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <button class="buttom button--action" type="submit">Save changes</button>
+              <button class="buttom button--pseudo" type="submit">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="user-profile__section">
+          <h2 class="user-profile__title user-profile--secondary">Workspace settings</h2>
+
+          <form class="user-profile-form" action="#" method="POST">
+            <div class="form__row">
+              <div class="form__column">
+                <label class="input-text">
+                  <select class="input-text__control" name="timeZone">
+                    <option>(GMT+7) Pacific day time</option>
+                    <option>(GMT-06:00) Mountain Time (US & Canada)</option>
+                    <option>(GMT+03:00) Moscow</option>
+                    <option>(GMT-11:00) Midway Island</option>
+                    <option>(GMT-11:00) Samoa</option>
+                    <option>(GMT-10:00) Hawaii</option>
+                    <option>(GMT-08:00) Alaska</option>
+                    <option>(GMT-07:00) Arizona</option>
+                    <option>(GMT-07:00) Baja</option>
+                    <option>(GMT-07:00) Chihuahua</option>
+                    <option>(GMT-07:00) Los Angeles</option>
+                    <option>(GMT-07:00) Mazatlan</option>
+                    <option>(GMT-07:00) Pacific Time (US & Canada)</option>
+                    <option>(GMT-07:00) Tijuana</option>
+                    <option>(GMT-06:00) Guatemala City</option>
+                    <option>(GMT-06:00) Managua (Nicaragua)</option>
+                    <option>(GMT-06:00) Mexico City</option>
+                    <option>(GMT-06:00) Monterrey</option>
+                    <option>(GMT-06:00) Mountain Time (US & Canada)</option>
+                    <option>(GMT-06:00) San José (Costa Rica)</option>
+                    <option>(GMT-06:00) San Salvador</option>
+                    <option>(GMT-06:00) Saskatchewan</option>
+                    <option>(GMT-06:00) Tegucigalpa (Honduras)</option>
+                    <option>(GMT-05:00) Bogota</option>
+                  </select>
+                  <span class="input-text__label">Time zone</span>
+                </label>
+              </div>
+              <div class="form__column">
+                <label class="input-text">
+                  <select class="input-text__control" name="language">
+                    <option>Deutsch</option>
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                    <option>Italiano</option>
+                    <option>Português (Brasil)</option>
+                    <option>Русский</option>
+                    <option>日本語</option>
+                    <option>中文 (中国)</option>
+                  </select>
+                  <span class="input-text__label">Language</span>
+                </label>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__column">
+                <label class="input-text">
+                  <select class="input-text__control" name="task">
+                    <option>Starting today</option>
+                    <option>Backlogged</option>
+                  </select>
+                  <span class="input-text__label">New task created by default as</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <button class="buttom button--action" type="submit" disabled>Save settings</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
-<script src="js/script.js"></script>
 </html>
