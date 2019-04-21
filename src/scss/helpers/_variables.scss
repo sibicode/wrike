@@ -1,0 +1,33 @@
+/* Fonts */
+$main-font-family: "Open Sans", "Arial", sans-serif;
+
+/* Colors */
+$color-black: #000;
+$color-black-light: rgba($color-black, 0.04);
+
+$color-blue-light: #69A0F6;
+$color-blue-main: #4488FF;
+$color-blue-dark: #3D7AE6;
+
+$color-tomato: #F15866;
+
+$color-grey: #ABABAB;
+$color-grey-dark: #284159;
+$color-grey-light: rgba($color-black, 0.32);
+
+$border-color: rgba($color-black, 0.16);
+$error-color: $color-tomato;
+
+$accent-bg-color: $color-grey-dark;
+
+$main-text-color: rgba(0, 0, 0, 0.9);
+$invert-main-text-color: invert($main-text-color);
+
+$button-main-bg-color: $color-blue-main;
+$button-main-bg-hover-color: $color-blue-light;
+$button-main-bg-active-color: $color-blue-dark;
+
+$button-disabled-color: $color-grey-light;
+$button-disabled-border-color: $border-color;
+
+$placeholder-color: $color-grey-light;
