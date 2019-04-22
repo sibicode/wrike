@@ -1,0 +1,58 @@
+.side-menu {
+  position: relative;
+}
+
+.side-menu:not(:last-child) {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    right: 0;
+    height: 1px;
+    background-color: rgba(255,255,255,0.12);
+  }
+}
+
+.side-menu__title {
+  display: flex;
+  align-items: center;
+  padding: 6px 0 6px 16px;
+  color: $invert-main-text-color;
+}
+
+.side-menu__title-icon {
+  flex-shrink: 0;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+.side-menu__title-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+  @include truncate-text
+}
+
+.side-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side-menu__link {
+  display: block;
+  padding: 6px 0 6px 40px;
+  color: $invert-main-text-color;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.side-menu__link--active {
+  background-color: $button-main-bg-color;
+  border-radius: 2px;
+}

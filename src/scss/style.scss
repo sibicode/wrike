@@ -1,5 +1,11 @@
 @import "helpers/variables";
+@import "helpers/mixins";
 
 @import "base/normalize";
 @import "base/global";
 @import "base/typograhy";
+
+@import "layout/page";
+@import "layout/page-header";
+
+@import "components/side-menu";
