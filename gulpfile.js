@@ -9,7 +9,8 @@ var gulp = require("gulp"),
 
 var paths = {
     styles: {
-        src: "src/scss/**/*.scss",
+        src: "src/scss/*.scss",
+        watch: "src/scss/**/*.scss",
         dest: "src/css"
     },
 
@@ -45,9 +46,10 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: "./src"
-        }
+        },
+        open: false
     });
-    gulp.watch(paths.styles.src, style);
+    gulp.watch(paths.styles.watch, style);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch("src/*.html", reload);
 };
