@@ -110,13 +110,13 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="firstName">
+                    <input class="input-text__control" type="text" name="firstName" value="Jhon">
                     <span class="input-text__label">First name</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="lastName">
+                    <input class="input-text__control" type="text" name="lastName" value="Smith">
                     <span class="input-text__label">Last name</span>
                   </label>
                 </div>
@@ -124,13 +124,13 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="companyName">
+                    <input class="input-text__control" type="text" name="companyName" value="Wrike">
                     <span class="input-text__label">Company name</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="job">
+                    <input class="input-text__control" type="text" name="job" value="UI Developer (crafting team)">
                     <span class="input-text__label">Job title</span>
                   </label>
                 </div>
@@ -138,23 +138,23 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="location">
+                    <input class="input-text__control" type="text" name="location" value="Saint-Petersburg">
                     <span class="input-text__label">Location</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="tel" name="phone">
+                    <input class="input-text__control" type="tel" name="phone" value="+7 (923) 345-34-32">
                     <span class="input-text__label">Phone number</span>
                   </label>
                 </div>
               </div>
 
-              <div class="user-profile-form__footer">
-                <button class="button button--action" type="submit">
+              <div class="user-profile-form__row user-profile-form__row--indent-lg">
+                <button class="user-profile-form__control button button--action" type="submit">
                   <span class="button__text">Save changes</span>
                 </button>
-                <button class="button button--pseudo" type="button">
+                <button class="user-profile-form__control button button--pseudo" type="button">
                   <span class="button__text">Cancel</span>
                 </button>
               </div>
@@ -214,7 +214,7 @@
                   </label>
                 </div>
               </div>
-              <div class="user-profile-form__row">
+              <div class="user-profile-form__row user-profile-form__row--indent-lg">
                 <div class="user-profile-form__column">
                   <label class="input-text">
                     <select class="input-text__control" name="task">
@@ -226,9 +226,9 @@
                 </div>
               </div>
 
-              <div class="user-profile-form__footer">
+              <div class="user-profile-form__row user-profile-form__row--indent-lg">
                 <div class="user-profile-form__column">
-                  <label class="user-profile-form__agreement input-checkbox">
+                  <label class="input-checkbox">
                     <input class="input-checkbox__control" type="checkbox">
                     <span class="input-checkbox__indicator"></span>
                     <span class="input-checkbox__text">
@@ -237,8 +237,9 @@
                     </span>
                   </label>
                 </div>
-
-                <button class="button button--action" type="submit" disabled>
+              </div>
+              <div class="user-profile-form__row">
+                <button class="user-profile-form__control button button--action" type="submit" disabled>
                   <span class="button__text">Save settings</span>
                 </button>
               </div>

@@ -1,0 +1,44 @@
+.input-text {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.input-text__label {
+  padding: 2px 0;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-text__control {
+  height: 32px;
+  padding: 4px 9px;
+  font-family: $main-font-family;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid $input-border-color;
+  border-radius: 2px;
+  background-color: #fff;
+  caret-color: $color-blue-main;
+  outline: none;
+
+  &:focus {
+    border-color: $input-focus-border-color;
+  }
+}
+
+.input-text__control:not(:disabled):invalid {
+  border-color: $error-color;
+
+  & ~ .input-text__label {
+    color: $error-color;
+  }
+}
+
+.input-text__control:disabled {
+  color: $input-disabled-color;
+  border-color: $border-color;
+
+  & ~ .input-text__label {
+    color: $input-disabled-color;
+  }
+}
