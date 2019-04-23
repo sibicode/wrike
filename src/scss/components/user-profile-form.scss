@@ -1,0 +1,20 @@
+.user-profile-form__row {
+  display: flex;
+}
+
+.user-profile-form__row + .user-profile-form__row {
+  margin-top: 24px;
+}
+
+.user-profile-form__column {
+  width: 300px;
+  margin-right: 32px;
+}
+
+.user-profile-form__footer {
+  margin-top: 32px;
+}
+
+.user-profile-form__agreement {
+  margin-bottom: 24px;
+}
