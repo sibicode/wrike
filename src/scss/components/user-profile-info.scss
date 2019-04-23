@@ -1,0 +1,29 @@
+.user-profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-info__avatar {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 24px;
+}
+
+.user-profile-info__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.user-profile-info__name {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.user-profile-info__position {
+  font-size: 14px;
+  line-height: 22px;
+}

@@ -17,6 +17,12 @@
   line-height: 32px;
 }
 
-.user-profile__section + .user-profile__section {
-  margin-top: 64px;
+.user-profile__section {
+  & + .user-profile__section {
+    margin-top: 64px;
+  }
+}
+
+.user-profile__info {
+  margin-bottom: 24px;
 }
