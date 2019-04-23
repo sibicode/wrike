@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   padding: 6px 0 6px 16px;
-  color: $invert-main-text-color;
+  color: $secondary-text-color;
 }
 
 .side-menu__title-icon {
@@ -46,13 +46,13 @@
 .side-menu__link {
   display: block;
   padding: 6px 0 6px 40px;
-  color: $invert-main-text-color;
+  color: $secondary-text-color;
   font-size: 12px;
   line-height: 20px;
   text-decoration: none;
 }
 
 .side-menu__link--active {
-  background-color: $button-main-bg-color;
+  background-color: $button-action-bg-color;
   border-radius: 2px;
 }
