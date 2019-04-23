@@ -1,0 +1,22 @@
+.user-profile {
+  padding: 48px 48px 34px;
+  background-color: $main-bg-color;
+}
+
+.user-profile__title {
+  margin-bottom: 32px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.user-profile__title--secondary {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.user-profile__section + .user-profile__section {
+  margin-top: 64px;
+}

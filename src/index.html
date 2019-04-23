@@ -91,149 +91,149 @@
           </ul>
         </div>
       </div>
-      <div class="page__content user-profile">
+      <div class="page__content">
+        <div class="user-profile">
+          <section class="user-profile__section">
+            <h1 class="user-profile__title">Profile details</h1>
 
-        <section class="user-profile__section">
-          <h1 class="user-profile__title">Profile details</h1>
+            <form class="user-profile-form" action="#" method="POST">
+              <div class="user-profile-info">
+                <div class="user-profile-info__avatar">
+                  <img src="#" alt="user" class="user-profile-info__logo">
+                </div>
+                <div class="user-profile-info__description">
+                  <span class="user-profile-info__name">Jhon Smith</span>
+                  <span class="user-profile-info__position">UI developer (crafting Team)</span>
+                </div>
+              </div>
 
-          <form class="user-profile-form" action="#" method="POST">
-            <div class="user-profile-info">
-              <div class="user-profile-info__avatar">
-                <img src="#" alt="user" class="user-profile-info__logo">
+              <div class="user-profile-form__row">
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="text" name="firstName">
+                    <span class="input-text__label">First name</span>
+                  </label>
+                </div>
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="text" name="lastName">
+                    <span class="input-text__label">Last name</span>
+                  </label>
+                </div>
               </div>
-              <div class="user-profile-info__description">
-                <span class="user-profile-info__name">Jhon Smith</span>
-                <span class="user-profile-info__position">UI developer (crafting Team)</span>
+              <div class="user-profile-form__row">
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="text" name="companyName">
+                    <span class="input-text__label">Company name</span>
+                  </label>
+                </div>
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="text" name="job">
+                    <span class="input-text__label">Job title</span>
+                  </label>
+                </div>
               </div>
-            </div>
+              <div class="user-profile-form__row">
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="text" name="location">
+                    <span class="input-text__label">Location</span>
+                  </label>
+                </div>
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <input class="input-text__control" type="tel" name="phone">
+                    <span class="input-text__label">Phone number</span>
+                  </label>
+                </div>
+              </div>
 
-            <div class="form__row">
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="text" name="firstName">
-                  <span class="input-text__label">First name</span>
-                </label>
+              <div class="user-profile-form__row">
+                <button class="button button--action" type="submit">
+                  <span class="button__text">Save changes</span>
+                </button>
+                <button class="button button--pseudo" type="button">
+                  <span class="button__text">Cancel</span>
+                </button>
               </div>
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="text" name="lastName">
-                  <span class="input-text__label">Last name</span>
-                </label>
-              </div>
-            </div>
-            <div class="form__row">
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="text" name="companyName">
-                  <span class="input-text__label">Company name</span>
-                </label>
-              </div>
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="text" name="job">
-                  <span class="input-text__label">Job title</span>
-                </label>
-              </div>
-            </div>
-            <div class="form__row">
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="text" name="location">
-                  <span class="input-text__label">Location</span>
-                </label>
-              </div>
-              <div class="form__column">
-                <label class="input-text">
-                  <input class="input-text__control" type="tel" name="phone">
-                  <span class="input-text__label">Phone number</span>
-                </label>
-              </div>
-            </div>
+            </form>
+          </section>
 
-            <div class="form__row">
-              <button class="button button--action" type="submit">
-                <span class="button__text">Save changes</span>
-              </button>
-              <button class="button button--pseudo" type="button">
-                <span class="button__text">Cancel</span>
-              </button>
-            </div>
-          </form>
-        </section>
+          <section class="user-profile__section">
+            <h2 class="user-profile__title user-profile__title--secondary">Workspace settings</h2>
 
-        <section class="user-profile__section">
-          <h2 class="user-profile__title user-profile__title--secondary">Workspace settings</h2>
-
-          <form class="user-profile-form" action="#" method="POST">
-            <div class="form__row">
-              <div class="form__column">
-                <label class="input-text">
-                  <select class="input-text__control" name="timeZone">
-                    <option>(GMT+7) Pacific day time</option>
-                    <option>(GMT-06:00) Mountain Time (US & Canada)</option>
-                    <option>(GMT+03:00) Moscow</option>
-                    <option>(GMT-11:00) Midway Island</option>
-                    <option>(GMT-11:00) Samoa</option>
-                    <option>(GMT-10:00) Hawaii</option>
-                    <option>(GMT-08:00) Alaska</option>
-                    <option>(GMT-07:00) Arizona</option>
-                    <option>(GMT-07:00) Baja</option>
-                    <option>(GMT-07:00) Chihuahua</option>
-                    <option>(GMT-07:00) Los Angeles</option>
-                    <option>(GMT-07:00) Mazatlan</option>
-                    <option>(GMT-07:00) Pacific Time (US & Canada)</option>
-                    <option>(GMT-07:00) Tijuana</option>
-                    <option>(GMT-06:00) Guatemala City</option>
-                    <option>(GMT-06:00) Managua (Nicaragua)</option>
-                    <option>(GMT-06:00) Mexico City</option>
-                    <option>(GMT-06:00) Monterrey</option>
-                    <option>(GMT-06:00) Mountain Time (US & Canada)</option>
-                    <option>(GMT-06:00) San José (Costa Rica)</option>
-                    <option>(GMT-06:00) San Salvador</option>
-                    <option>(GMT-06:00) Saskatchewan</option>
-                    <option>(GMT-06:00) Tegucigalpa (Honduras)</option>
-                    <option>(GMT-05:00) Bogota</option>
-                  </select>
-                  <span class="input-text__label">Time zone</span>
-                </label>
+            <form class="user-profile-form" action="#" method="POST">
+              <div class="user-profile-form__row">
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <select class="input-text__control" name="timeZone">
+                      <option>(GMT+7) Pacific day time</option>
+                      <option>(GMT-06:00) Mountain Time (US & Canada)</option>
+                      <option>(GMT+03:00) Moscow</option>
+                      <option>(GMT-11:00) Midway Island</option>
+                      <option>(GMT-11:00) Samoa</option>
+                      <option>(GMT-10:00) Hawaii</option>
+                      <option>(GMT-08:00) Alaska</option>
+                      <option>(GMT-07:00) Arizona</option>
+                      <option>(GMT-07:00) Baja</option>
+                      <option>(GMT-07:00) Chihuahua</option>
+                      <option>(GMT-07:00) Los Angeles</option>
+                      <option>(GMT-07:00) Mazatlan</option>
+                      <option>(GMT-07:00) Pacific Time (US & Canada)</option>
+                      <option>(GMT-07:00) Tijuana</option>
+                      <option>(GMT-06:00) Guatemala City</option>
+                      <option>(GMT-06:00) Managua (Nicaragua)</option>
+                      <option>(GMT-06:00) Mexico City</option>
+                      <option>(GMT-06:00) Monterrey</option>
+                      <option>(GMT-06:00) Mountain Time (US & Canada)</option>
+                      <option>(GMT-06:00) San José (Costa Rica)</option>
+                      <option>(GMT-06:00) San Salvador</option>
+                      <option>(GMT-06:00) Saskatchewan</option>
+                      <option>(GMT-06:00) Tegucigalpa (Honduras)</option>
+                      <option>(GMT-05:00) Bogota</option>
+                    </select>
+                    <span class="input-text__label">Time zone</span>
+                  </label>
+                </div>
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <select class="input-text__control" name="language">
+                      <option>Deutsch</option>
+                      <option>English</option>
+                      <option>Español</option>
+                      <option>Français</option>
+                      <option>Italiano</option>
+                      <option>Português (Brasil)</option>
+                      <option>Русский</option>
+                      <option>日本語</option>
+                      <option>中文 (中国)</option>
+                    </select>
+                    <span class="input-text__label">Language</span>
+                  </label>
+                </div>
               </div>
-              <div class="form__column">
-                <label class="input-text">
-                  <select class="input-text__control" name="language">
-                    <option>Deutsch</option>
-                    <option>English</option>
-                    <option>Español</option>
-                    <option>Français</option>
-                    <option>Italiano</option>
-                    <option>Português (Brasil)</option>
-                    <option>Русский</option>
-                    <option>日本語</option>
-                    <option>中文 (中国)</option>
-                  </select>
-                  <span class="input-text__label">Language</span>
-                </label>
+              <div class="user-profile-form__row">
+                <div class="user-profile-form__column">
+                  <label class="input-text">
+                    <select class="input-text__control" name="task">
+                      <option>Starting today</option>
+                      <option>Backlogged</option>
+                    </select>
+                    <span class="input-text__label">New task created by default as</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="form__row">
-              <div class="form__column">
-                <label class="input-text">
-                  <select class="input-text__control" name="task">
-                    <option>Starting today</option>
-                    <option>Backlogged</option>
-                  </select>
-                  <span class="input-text__label">New task created by default as</span>
-                </label>
+
+              <div class="user-profile-form__row">
+                <button class="button button--action" type="submit" disabled>
+                  <span class="button__text">Save settings</span>
+                </button>
               </div>
-            </div>
-
-            <div class="form__row">
-              <button class="button button--action" type="submit" disabled>
-                <span class="button__text">Save settings</span>
-              </button>
-            </div>
-          </form>
-        </section>
-
+            </form>
+          </section>
+        </div>
       </div>
     </main>
   </div>
