@@ -1,0 +1,64 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 15px;
+  font-family: $main-font-family;
+  font-size: 14px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &__text {
+    padding: 4px 0;
+    text-align: center;
+    line-height: 22px;
+    word-break: break-word;
+  }
+
+  &:disabled {
+    user-select: none;
+    cursor: default;
+  }
+}
+
+.button--action {
+  color: $button-action-color;
+  background-color: $button-action-bg-color;
+
+  &:hover,
+  &:focus {
+    background-color: $button-action-bg-hover-color;
+  }
+
+  &:active {
+    background-color: $button-action-bg-active-color;
+  }
+
+  &:disabled {
+    color: $button-disabled-color;
+    border-color: $button-disabled-border-color;
+    background-color: transparent;
+  }
+}
+
+.button--pseudo {
+  padding: 0;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    color: $button-pseudo-hover-color;
+  }
+
+  &:active {
+    color: $button-pseudo-active-color;
+  }
+
+  &:disabled {
+    color: $button-disabled-color;
+  }
+}
