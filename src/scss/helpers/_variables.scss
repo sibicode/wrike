@@ -6,6 +6,7 @@ $color-black: #000;
 $color-black-light: rgba($color-black, 0.04);
 
 $color-blue-light: #69A0F6;
+$color-blue-medium: #619AFF;
 $color-blue-main: #4488FF;
 $color-blue-dark: #3D7AE6;
 
@@ -41,3 +42,19 @@ $placeholder-color: $color-grey-light;
 $input-border-color: $color-grey-light;
 $input-focus-border-color: $color-blue-main;
 $input-disabled-color: $color-grey-light;
+
+$checkbox-default-color: $main-text-color;
+$checkbox-focus-color: $color-blue-main;
+$checkbox-hover-color: $color-blue-light;
+$checkbox-disabled-color: $color-grey-light;
+
+$checkbox-default-indicator-color: $color-grey-light;
+$checkbox-checked-indicator-color: $color-blue-main;
+$checkbox-focus-indicator-color: $color-blue-main;
+$checkbox-hover-indicator-color: $color-blue-light;
+
+$checkbox-focus-indicator-fill: $color-blue-medium;
+$checkbox-hover-indicator-fill: $color-blue-medium;
+
+$checkbox-disabled-indicator-fill: $border-color;
+$checkbox-disabled-indicator-color: $border-color;

@@ -3,3 +3,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+@mixin visually-hidden {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}

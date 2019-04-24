@@ -1,0 +1,84 @@
+.input-checkbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $checkbox-default-color;
+  cursor: pointer;
+}
+
+.input-checkbox__control {
+  @include visually-hidden;
+}
+
+.input-checkbox__control:checked {
+  & ~ .input-checkbox__indicator {
+      fill: $checkbox-checked-indicator-color;
+
+    & .input-checkbox__indicator-check {
+      display: block;
+    }
+
+    & .input-checkbox__indicator-uncheck {
+      display: none;
+    }
+  }
+}
+
+.input-checkbox__control:not(:disabled):checked:hover {
+  & ~ .input-checkbox__indicator {
+    fill: $checkbox-hover-indicator-color;
+  }
+}
+
+.input-checkbox__control:not(:disabled):hover {
+  & ~ .input-checkbox__indicator {
+    fill: $checkbox-hover-indicator-fill;
+    color: $checkbox-hover-indicator-color;
+  }
+
+  & ~ .input-checkbox__text {
+    color: $checkbox-hover-color;
+  }
+}
+
+.input-checkbox__control:not(:disabled):focus {
+  & ~ .input-checkbox__indicator {
+      fill: $checkbox-focus-indicator-fill;
+      color: $checkbox-focus-indicator-color;
+  }
+
+  & ~ .input-checkbox__text {
+    color: $checkbox-focus-color;
+  }
+}
+
+.input-checkbox__control:disabled {
+  & ~ .input-checkbox__indicator {
+      fill: $checkbox-disabled-indicator-fill;
+      color: $checkbox-disabled-indicator-color;
+  }
+
+  & ~ .input-checkbox__text {
+    color: $checkbox-disabled-color;
+  }
+}
+
+.input-checkbox__indicator {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: $checkbox-default-indicator-color;
+}
+
+.input-checkbox__indicator-check {
+  display: none;
+}
+
+.input-checkbox__text {
+  padding: 5px 0;
+}
