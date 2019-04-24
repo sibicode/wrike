@@ -2,12 +2,14 @@
 @import "helpers/mixins";
 
 @import "base/normalize";
+@import "base/reset";
 @import "base/global";
 @import "base/typograhy";
 
 @import "layout/page";
 @import "layout/page-header";
 
+@import "components/link";
 @import "components/button";
 @import "components/input-text";
 @import "components/input-checkbox";
