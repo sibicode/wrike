@@ -26,6 +26,11 @@ $main-text-color: rgba(0, 0, 0, 0.9);
 $invert-main-text-color: invert($main-text-color);
 $secondary-text-color: $invert-main-text-color;
 
+$main-link-color: $color-blue-main;
+
+$side-menu-link-bg-color: $color-blue-main;
+$side-menu-link-hover-bg-color: $color-blue-main;
+
 $button-action-bg-color: $color-blue-main;
 $button-action-bg-hover-color: $color-blue-light;
 $button-action-bg-active-color: $color-blue-dark;

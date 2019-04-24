@@ -27,7 +27,6 @@
 .side-menu__title-icon {
   flex-shrink: 0;
   margin-right: 8px;
-  fill: currentColor;
 }
 
 .side-menu__title-text {
@@ -50,9 +49,13 @@
   font-size: 12px;
   line-height: 20px;
   text-decoration: none;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $side-menu-link-bg-color;
+  }
 }
 
 .side-menu__link--active {
-  background-color: $button-action-bg-color;
-  border-radius: 2px;
+  background-color: $side-menu-link-hover-bg-color;
 }
