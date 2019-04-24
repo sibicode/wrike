@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-left: 20px;
   font-size: 14px;
   line-height: 22px;
@@ -9,8 +10,39 @@
   cursor: pointer;
 }
 
+.input-checkbox:hover {
+
+  .input-checkbox__control:not(:disabled):checked {
+    & ~ .input-checkbox__indicator {
+      fill: $checkbox-hover-indicator-color;
+    }
+  }
+
+  .input-checkbox__control:not(:disabled) {
+    & ~ .input-checkbox__indicator {
+      fill: $checkbox-hover-indicator-fill;
+      color: $checkbox-hover-indicator-color;
+    }
+
+    & ~ .input-checkbox__text {
+      color: $checkbox-hover-color;
+    }
+  }
+}
+
 .input-checkbox__control {
   @include visually-hidden;
+}
+
+.input-checkbox__control:not(:disabled):focus {
+  & ~ .input-checkbox__indicator {
+    fill: $checkbox-focus-indicator-fill;
+    color: $checkbox-focus-indicator-color;
+  }
+
+  & ~ .input-checkbox__text {
+    color: $checkbox-focus-color;
+  }
 }
 
 .input-checkbox__control:checked {
@@ -24,34 +56,6 @@
     & .input-checkbox__indicator-uncheck {
       display: none;
     }
-  }
-}
-
-.input-checkbox__control:not(:disabled):checked:hover {
-  & ~ .input-checkbox__indicator {
-    fill: $checkbox-hover-indicator-color;
-  }
-}
-
-.input-checkbox__control:not(:disabled):hover {
-  & ~ .input-checkbox__indicator {
-    fill: $checkbox-hover-indicator-fill;
-    color: $checkbox-hover-indicator-color;
-  }
-
-  & ~ .input-checkbox__text {
-    color: $checkbox-hover-color;
-  }
-}
-
-.input-checkbox__control:not(:disabled):focus {
-  & ~ .input-checkbox__indicator {
-      fill: $checkbox-focus-indicator-fill;
-      color: $checkbox-focus-indicator-color;
-  }
-
-  & ~ .input-checkbox__text {
-    color: $checkbox-focus-color;
   }
 }
 
@@ -80,5 +84,6 @@
 }
 
 .input-checkbox__text {
+  width: 100%;
   padding: 5px 0;
 }
