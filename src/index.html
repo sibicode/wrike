@@ -112,6 +112,10 @@
             <form class="user-profile-form" action="#" method="POST">
               <div class="user-profile__info user-profile-info">
                 <div class="user-profile-info__avatar">
+                  <label class="user-profile-info__avatar-uploader user-avatar-uploader">
+                    <input class="user-avatar-uploader__control" type="file" name="userAvatar">
+                    <span class="user-avatar-uploader__text">upload</span>
+                  </label>
                   <img src="/img/profile/user-avatar.jpg" alt="user" class="user-profile-info__img">
                 </div>
                 <div class="user-profile-info__description">
@@ -123,13 +127,13 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="firstName" value="Jhon">
+                    <input class="input-text__control" type="text" name="firstName" value="Jhon" required>
                     <span class="input-text__label">First name</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="lastName" value="Smith">
+                    <input class="input-text__control" type="text" name="lastName" value="Smith" required>
                     <span class="input-text__label">Last name</span>
                   </label>
                 </div>
@@ -137,13 +141,13 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="companyName" value="Wrike">
+                    <input class="input-text__control" type="text" name="companyName" value="Wrike" required>
                     <span class="input-text__label">Company name</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="job" value="UI Developer (crafting team)">
+                    <input class="input-text__control" type="text" name="job" value="UI Developer (crafting team)" required>
                     <span class="input-text__label">Job title</span>
                   </label>
                 </div>
@@ -151,13 +155,13 @@
               <div class="user-profile-form__row">
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="text" name="location" value="Saint-Petersburg">
+                    <input class="input-text__control" type="text" name="location" value="Saint-Petersburg" required>
                     <span class="input-text__label">Location</span>
                   </label>
                 </div>
                 <div class="user-profile-form__column">
                   <label class="input-text">
-                    <input class="input-text__control" type="tel" name="phone" value="+7 (923) 345-34-32">
+                    <input class="input-text__control" type="tel" name="phone" value="+7 (923) 345-34-32" required>
                     <span class="input-text__label">Phone number</span>
                   </label>
                 </div>
