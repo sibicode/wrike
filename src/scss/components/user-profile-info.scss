@@ -4,16 +4,19 @@
 }
 
 .user-profile-info__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   width: 80px;
   height: 80px;
+  margin-right: 24px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 24px;
 }
 
 .user-profile-info__img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
