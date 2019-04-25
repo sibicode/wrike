@@ -3,7 +3,14 @@
   outline: none;
 }
 
-.user-profile-preview:focus-within,
+.user-profile-preview:focus-within {
+  .user-profile-preview__dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .user-profile-preview:hover {
   .user-profile-preview__dropdown {
     visibility: visible;

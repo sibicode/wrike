@@ -4,21 +4,20 @@
   cursor: pointer;
 }
 
-.user-avatar-uploader:focus-within,
 .user-avatar-uploader:hover {
   .user-avatar-uploader__text {
     opacity: 1;
   }
 }
 
+.user-avatar-uploader__control {
+  @include visually-hidden;
+}
+
 .user-avatar-uploader__control:focus {
   & + .user-avatar-uploader__text {
     opacity: 1;
   }
-}
-
-.user-avatar-uploader__control {
-  @include visually-hidden;
 }
 
 .user-avatar-uploader__text {
