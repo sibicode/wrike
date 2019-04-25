@@ -14,13 +14,12 @@
 
   .input-checkbox__control:not(:disabled):checked {
     & ~ .input-checkbox__indicator {
-      fill: $checkbox-hover-indicator-color;
+      fill: $checkbox-hover-indicator-fill;
     }
   }
 
   .input-checkbox__control:not(:disabled) {
     & ~ .input-checkbox__indicator {
-      fill: $checkbox-hover-indicator-fill;
       color: $checkbox-hover-indicator-color;
     }
 
@@ -47,7 +46,7 @@
 
 .input-checkbox__control:checked {
   & ~ .input-checkbox__indicator {
-      fill: $checkbox-checked-indicator-color;
+    fill: $checkbox-checked-indicator-fill;
 
     & .input-checkbox__indicator-check {
       display: block;
@@ -61,8 +60,8 @@
 
 .input-checkbox__control:disabled {
   & ~ .input-checkbox__indicator {
-      fill: $checkbox-disabled-indicator-fill;
-      color: $checkbox-disabled-indicator-color;
+    fill: $checkbox-disabled-indicator-fill;
+    color: $checkbox-disabled-indicator-color;
   }
 
   & ~ .input-checkbox__text {
