@@ -16,8 +16,8 @@
   font-size: 14px;
   line-height: 22px;
   border: 1px solid $input-border-color;
-  border-radius: 2px;
-  background-color: #fff;
+  border-radius: $border-radius-default;
+  background-color: $color-white;
   caret-color: $color-blue-main;
   outline: none;
 
