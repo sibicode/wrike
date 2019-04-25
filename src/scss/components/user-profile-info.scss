@@ -16,17 +16,10 @@
   overflow: hidden;
 }
 
-.user-profile-info__avatar:hover {
-  .user-profile-info__avatar-uploader {
-    opacity: 1;
-  }
-}
-
 .user-profile-info__avatar-uploader {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0;
 }
 
 .user-profile-info__img {
