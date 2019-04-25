@@ -9,11 +9,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
   margin-right: 24px;
-  border-radius: 50%;
-  overflow: hidden;
+  @include create-round(80px);
 }
 
 .user-profile-info__avatar-uploader {

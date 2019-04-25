@@ -17,6 +17,9 @@
       <path fill="#009949" d="M34 7.727L36.222 10 46 0h-4.444"/>
       <path d="M30.444 4.09L36.222 10l2.222-2.273-3.555-3.636h-4.445z"  fill="#9FD326"/>
     </symbol>
+    <symbol id="icon-arrow-down">
+      <path d="M8 8.5l3-3 1 1-4 4-4-4 1-1z"/>
+    </symbol>
     <symbol id="icon-user">
       <path fill="currentColor" d="M13 14h-1a4 4 0 1 0-8 0H3a5 5 0 0 1 10 0zm-2-9a3 3 0 0 1-3 3C6.35 8 5 6.65 5 5s1.35-3 3-3a3 3 0 0 1 3 3zm-1 0a2 2 0 0 0-2-2c-1.098 0-2 .902-2 2 0 1.098.902 2 2 2a2 2 0 0 0 2-2z"/>
     </symbol>
@@ -28,80 +31,78 @@
   <div class="page">
     <header class="page-header">
       <a href="#" class="page-header__logo logo">
-        <svg class="logo__img" width="65px" height="22px">
+        <svg focusable="false" class="logo__img" width="65px" height="22px">
           <use href="#icon-wrike-logo"></use>
         </svg>
       </a>
       <div class="page-header__profile">
-        user profile
+        <div class="user-profile-preview" tabindex="0">
+          <div class="user-profile-preview__container">
+            <div class="user-profile-preview__avatar">
+              <img src="/img/profile/user-avatar.jpg" alt="user" class="user-profile-preview__img">
+            </div>
+            <div class="user-profile-preview__description">
+              <div class="user-profile-preview__name">Jhon</div>
+              <div class="user-profile-preview__position">Wrike Team</div>
+            </div>
+            <svg focusable="false" class="user-profile-preview__icon" width="16px" height="16px">
+              <use href="#icon-arrow-down"></use>
+            </svg>
+          </div>
+          <div class="user-profile-preview__dropdown">
+            <div class="user-profile-dropdown-menu">
+              <div class="user-profile-dropdown-menu__title">Wrike Team</div>
+              <div class="user-profile-dropdown-menu__list">
+                <a class="user-profile-dropdown-menu__link" href="#">Profile Settings</a>
+                <a class="user-profile-dropdown-menu__link" href="#">Team directory</a>
+                <a class="user-profile-dropdown-menu__link" href="#">Apps & Integrations</a>
+                <a class="user-profile-dropdown-menu__link" href="#">Mobile apps</a>
+                <a class="user-profile-dropdown-menu__link" href="#">Help</a>
+              </div>
+              <div class="user-profile-dropdown-menu__list">
+                <a class="user-profile-dropdown-menu__link" href="#">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="page__wrapper">
       <div class="page__sidebar">
         <div class="side-menu">
           <div class="side-menu__title">
-            <svg class="side-menu__title-icon" width="16px" height="16px">
+            <svg focusable="false" class="side-menu__title-icon" width="16px" height="16px">
               <use href="#icon-user"></use>
             </svg>
             <span class="side-menu__title-text">Personal settings</span>
           </div>
-          <ul class="side-menu__list">
-            <li class="side-menu__list-item">
-              <a class="side-menu__link side-menu__link--active" href="#">Profile details</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Account info</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Email preferences</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Work schedule</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Password & security</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Apps access</a>
-            </li>
-          </ul>
+          <div class="side-menu__list">
+            <a class="side-menu__link side-menu__link--active" href="#">Profile details</a>
+            <a class="side-menu__link" href="#">Account info</a>
+            <a class="side-menu__link" href="#">Email preferences</a>
+            <a class="side-menu__link" href="#">Work schedule</a>
+            <a class="side-menu__link" href="#">Password & security</a>
+            <a class="side-menu__link" href="#">Apps access</a>
+          </div>
         </div>
         <div class="side-menu">
           <div class="side-menu__title">
-            <svg class="side-menu__title-icon" width="16px" height="16px">
+            <svg focusable="false" class="side-menu__title-icon" width="16px" height="16px">
               <use href="#icon-settings"></use>
             </svg>
             <span class="side-menu__title-text">Account managment</span>
           </div>
-          <ul class="side-menu__list">
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Subscription</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Billing</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Users & groups</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Request form builder</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Custom workflows</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Activity reports</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Calendars</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Account settings</a>
-            </li>
-            <li class="side-menu__list-item">
-              <a class="side-menu__link" href="#">Advanced security</a>
-            </li>
-          </ul>
+          <div class="side-menu__list">
+            <a class="side-menu__link" href="#">Subscription</a>
+            <a class="side-menu__link" href="#">Billing</a>
+            <a class="side-menu__link" href="#">Users & groups</a>
+            <a class="side-menu__link" href="#">Request form builder</a>
+            <a class="side-menu__link" href="#">Custom workflows</a>
+            <a class="side-menu__link" href="#">Activity reports</a>
+            <a class="side-menu__link" href="#">Calendars</a>
+            <a class="side-menu__link" href="#">Account settings</a>
+            <a class="side-menu__link" href="#">Advanced security</a>
+          </div>
         </div>
       </div>
       <div class="page__content">

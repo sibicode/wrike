@@ -2,6 +2,7 @@
 $main-font-family: "Open Sans", "Arial", sans-serif;
 
 /* Colors */
+$color-white: #fff;
 $color-black: #000;
 $color-black-light: rgba($color-black, 0.04);
 
@@ -19,7 +20,7 @@ $color-grey-light: rgba($color-black, 0.32);
 $border-color: rgba($color-black, 0.16);
 $error-color: $color-tomato;
 
-$main-bg-color: rgba(255, 255, 255, 0.9);
+$main-bg-color: rgba($color-white, 0.9);
 $accent-bg-color: $color-grey-dark;
 
 $main-text-color: rgba(0, 0, 0, 0.9);
@@ -28,10 +29,13 @@ $secondary-text-color: $invert-main-text-color;
 
 $main-link-color: $color-blue-main;
 
-$side-menu-link-bg-color: $color-blue-main;
+$side-menu-link-active-bg-color: $color-blue-main;
 $side-menu-link-hover-bg-color: $color-blue-main;
 
-$divider-bg-color: rgba(255, 255, 255, 0.12);
+$dropdown-menu-link-hover-bg-color: $color-black-light;
+
+$divider-bg-color: rgba($color-white, 0.12);
+$divider-light-bg-color: rgba($color-black, 0.16);
 
 $button-action-bg-color: $color-blue-main;
 $button-action-bg-hover-color: $color-blue-light;
@@ -65,3 +69,7 @@ $checkbox-hover-indicator-fill: $color-blue-medium;
 
 $checkbox-disabled-indicator-fill: $border-color;
 $checkbox-disabled-indicator-color: $border-color;
+
+$box-shadow-default-color: rgba($color-black, 0.16);
+
+$border-radius-default: 2px;

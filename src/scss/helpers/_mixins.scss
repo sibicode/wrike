@@ -10,3 +10,10 @@
   z-index: -1;
   clip: rect(0 0 0 0);
 }
+
+@mixin create-round($diameter) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  overflow: hidden;
+}
