@@ -20,6 +20,10 @@
     word-break: break-word;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:disabled {
     user-select: none;
     cursor: default;
