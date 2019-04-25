@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     handleUserProfileForm();
+    handleCustomSelect();
 });
 
 function handleUserProfileForm () {
@@ -19,7 +20,7 @@ function handleUserProfileForm () {
 
     function handleFormCancel () {
         if (!formSubmit.disabled) {
-            Array.prototype.slice.call(formInputs).forEach(function (input) {
+           toArray(formInputs).forEach(function (input) {
                 input.value = input.defaultValue;
             })
             formSubmit.disabled = true;
@@ -29,11 +30,52 @@ function handleUserProfileForm () {
     function handleFormSubmit (event) {
         event.preventDefault();
 
-        Array.prototype.slice.call(formInputs).forEach(function (input) {
+       toArray(formInputs).forEach(function (input) {
             input.defaultValue = input.value;
         })
         formSubmit.disabled = true;
 
         alert('Form Data Saved :D');
     }
+}
+
+function handleCustomSelect () {
+    const selectList = document.querySelectorAll('.custom-select');
+    const OPENED_CLASS = 'custom-select--opened';
+    const ACTIVE_CLASS = 'custom-select__option--active';
+
+    document.addEventListener('click', handleCloseAllSelects, true);
+
+    toArray(selectList).forEach(function (select) {
+        select.addEventListener('click', handleSelect, true);
+    });
+
+    function handleSelect (event) {
+        const currentTarget = event.target;
+        const currentSelect = event.currentTarget;
+        const currentActiveOption = currentSelect.querySelector('.' + ACTIVE_CLASS);
+        const currentSelectText = currentSelect.querySelector('.js-select-text');
+
+        currentSelect.classList.add(OPENED_CLASS);
+
+        if (currentTarget.classList.contains('custom-select__option')) {
+            currentSelectText.textContent = currentTarget.textContent;
+            currentActiveOption.classList.remove(ACTIVE_CLASS);
+            currentTarget.classList.add(ACTIVE_CLASS);
+            currentSelect.classList.remove(OPENED_CLASS);
+        }
+    }
+
+    function handleCloseAllSelects (select) {
+        toArray(selectList).forEach(function (item) {
+            if (select !== item) {
+                item.classList.remove(OPENED_CLASS);
+            }
+        })
+    }
+}
+
+/* Helpers */
+function toArray (list) {
+    return Array.prototype.slice.call(list);
 }

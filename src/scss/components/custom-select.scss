@@ -2,8 +2,7 @@
   position: relative;
 }
 
-.custom-select:focus-within {
-
+.custom-select--opened {
   .custom-select__list {
     visibility: visible;
     opacity: 1;
@@ -12,14 +11,8 @@
 
 .custom-select:hover,
 .custom-select:focus {
-
   .custom-select__button {
     border-color: $input-focus-border-color;
-  }
-
-  .custom-select__list {
-    visibility: visible;
-    opacity: 1;
   }
 }
 
@@ -47,15 +40,12 @@
 .custom-select__button:focus {
   border-color: $input-focus-border-color;
   outline: none;
-
-  & + .custom-select__list {
-    visibility: visible;
-    opacity: 1;
-  }
 }
 
 .custom-select__button-text {
   flex-grow: 1;
+  @include truncate-text;
+  pointer-events: none;
 }
 
 .custom-select__icon {
