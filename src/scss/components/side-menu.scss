@@ -31,7 +31,7 @@
 
 .side-menu__title-text {
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.6666667;
   text-transform: uppercase;
   @include truncate-text
 }
@@ -41,7 +41,7 @@
   padding: 6px 0 6px 40px;
   color: $secondary-text-color;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.6666667;
   text-decoration: none;
   border-radius: $border-radius-default;
   outline: none;

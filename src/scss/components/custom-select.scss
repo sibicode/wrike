@@ -19,7 +19,7 @@
 .custom-select__label {
   padding: 2px 0;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 1.6666667;
 }
 
 .custom-select__button {
@@ -29,7 +29,7 @@
   width: 100%;
   height: 32px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5714285;
   border: 1px solid $input-border-color;
   border-radius: $border-radius-default;
   background-color: $color-white;
@@ -71,7 +71,7 @@
 .custom-select__option {
   padding: 6px 32px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4285714;
   color: $main-text-color;
   @include truncate-text;
   outline: none;
