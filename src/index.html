@@ -110,7 +110,7 @@
           <section class="user-profile__section">
             <h1 class="user-profile__title">Profile details</h1>
 
-            <form class="user-profile-form" action="#" method="POST">
+            <form class="user-profile-form js-user-profile-form" action="#" method="POST">
               <div class="user-profile__info user-profile-info">
                 <div class="user-profile-info__avatar">
                   <label class="user-profile-info__avatar-uploader user-avatar-uploader">
@@ -169,10 +169,10 @@
               </div>
 
               <div class="user-profile-form__row user-profile-form__row--indent-lg">
-                <button class="user-profile-form__control button button--action" type="submit">
+                <button class="user-profile-form__control button button--action js-form-submit" type="submit" disabled>
                   <span class="button__text">Save changes</span>
                 </button>
-                <button class="user-profile-form__control button button--pseudo" type="button">
+                <button class="user-profile-form__control button button--pseudo js-form-cancel" type="button">
                   <span class="button__text">Cancel</span>
                 </button>
               </div>
