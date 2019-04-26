@@ -45,6 +45,7 @@
   text-decoration: none;
   border-radius: $border-radius-default;
   outline: none;
+  @include truncate-text;
 
   &:focus,
   &:hover {
@@ -52,6 +53,8 @@
   }
 }
 
-.side-menu__link--active {
+.side-menu__link--active,
+.side-menu__link--active:focus,
+.side-menu__link--active:hover {
   background-color: $side-menu-link-active-bg-color;
 }
