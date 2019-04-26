@@ -1,5 +1,6 @@
 .user-profile-form__row {
   display: flex;
+  flex-wrap: wrap;
 
   & + & {
     margin-top: 24px;
@@ -11,6 +12,7 @@
 }
 
 .user-profile-form__column {
+  flex-shrink: 0;
   width: 300px;
   margin-right: 32px;
 }
