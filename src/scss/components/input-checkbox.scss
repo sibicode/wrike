@@ -33,7 +33,7 @@
   @include visually-hidden;
 }
 
-.input-checkbox__control:not(:disabled):focus {
+.input-checkbox__control:not(:disabled, :invalid):focus {
   & ~ .input-checkbox__indicator {
     fill: $checkbox-focus-indicator-fill;
     color: $checkbox-focus-indicator-color;
@@ -66,6 +66,17 @@
 
   & ~ .input-checkbox__text {
     color: $checkbox-disabled-color;
+  }
+}
+
+.input-checkbox__control:invalid {
+
+  & ~ .input-checkbox__indicator {
+    color: $error-color;
+  }
+
+  & ~ .input-checkbox__text {
+    color: $error-color;
   }
 }
 
