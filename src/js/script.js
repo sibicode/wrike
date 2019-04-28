@@ -4,38 +4,59 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function handleUserProfileForm () {
-    const form = document.querySelector('.js-user-profile-form');
-    const formSubmit = form.querySelector('.js-form-submit');
-    const formCancel = form.querySelector('.js-form-cancel');
-    const formInputs = form.querySelectorAll('input');
+    const userProfileForms = document.querySelectorAll('.js-user-profile-form');
+    toArray(userProfileForms).forEach(handleUserProfileFormInit);
 
-    form.addEventListener('input', handleFormChange);
-    form.addEventListener('submit', handleFormSubmit);
-    formCancel.addEventListener('click', handleFormCancel);
+    function handleUserProfileFormInit (form) {
+        const formSubmit = form.querySelector('.js-form-submit');
+        const formReset = form.querySelector('.js-form-cancel');
+        const formInputs = form.querySelectorAll('input');
 
-    function handleFormChange (event) {
-        const target = event.target;
-        formSubmit.disabled = target.value === target.defaultValue;
-    }
+        form.addEventListener('input', handleFormChange);
+        form.addEventListener('submit', handleFormSubmit);
 
-    function handleFormCancel () {
-        if (!formSubmit.disabled) {
-           toArray(formInputs).forEach(function (input) {
-                input.value = input.defaultValue;
+        formReset && formReset.addEventListener('click', handleFormReset);
+
+        function handleFormChange () {
+            formSubmit.disabled = !handleFormControlChanged()
+        }
+
+        function handleFormControlChanged () {
+            let isFormChanged = false;
+
+            toArray(formInputs).forEach(function (control) {
+                if (control.type === 'checkbox') {
+                    if (control.checked !== control.defaultChecked) {
+                        isFormChanged = true
+                    }
+                } else {
+                    if (control.value !== control.defaultValue) {
+                        isFormChanged = true
+                    }
+                }
             })
+
+            return isFormChanged
+        }
+
+        function handleFormReset () {
             formSubmit.disabled = true;
         }
-    }
 
-    function handleFormSubmit (event) {
-        event.preventDefault();
+        function handleFormSubmit (event) {
+            event.preventDefault();
 
-       toArray(formInputs).forEach(function (input) {
-            input.defaultValue = input.value;
-        })
-        formSubmit.disabled = true;
+            toArray(formInputs).forEach(function (control) {
+                if (control.type === 'checkbox') {
+                    control.defaultChecked = control.checked;
+                } else {
+                    control.defaultValue = control.value;
+                }
+            })
+            formSubmit.disabled = true;
 
-        alert('Form Data Saved :D');
+            alert('Form Data Saved :D');
+        }
     }
 }
 
