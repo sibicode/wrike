@@ -10,7 +10,7 @@
 }
 
 .input-text__control {
-  height: 32px;
+  min-height: 32px;
   padding: 4px 9px;
   font-family: $main-font-family;
   font-size: 14px;
@@ -23,6 +23,10 @@
 
   &:focus {
     border-color: $input-focus-border-color;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
   }
 
   &::-ms-clear {
