@@ -42,13 +42,13 @@
 }
 
 .user-profile-preview__name {
-  font-size: 14px;
+  font-size: $default-font-size;
   line-height: 1.4285714;
   color: $secondary-text-color;
 }
 
 .user-profile-preview__position {
-  font-size: 12px;
+  font-size: $font-size-sm;
   line-height: 1.6666667;
   color: rgba(255, 255, 255, 0.64);
 }

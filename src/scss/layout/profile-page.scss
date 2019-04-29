@@ -1,16 +1,30 @@
-.page {
+.profile-page {
   min-width: 1280px;
   height: 100%;
   overflow: hidden;
 }
 
-.page__wrapper {
+.profile-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 32px;
+  background-color: $accent-bg-color;
+}
+
+.profile-page__header-user-preview {
+  transform: translateX(15px);
+  z-index: 1;
+}
+
+.profile-page__wrapper {
   display: flex;
   height: calc(100vh - 56px);
   background-color: $accent-bg-color;
 }
 
-.page__sidebar {
+.profile-page__sidebar {
   flex-shrink: 0;
   width: 256px;
   margin-bottom: 24px;
@@ -18,7 +32,7 @@
   overflow-y: auto;
 }
 
-.page__content {
+.profile-page__content {
   position: relative;
   flex-grow: 1;
   width: 100%;

@@ -5,7 +5,7 @@
 
 .input-text__label {
   padding: 2px 0;
-  font-size: 12px;
+  font-size: $font-size-sm;
   line-height: 1.6666667;
 }
 
@@ -13,7 +13,7 @@
   min-height: 32px;
   padding: 4px 9px;
   font-family: $main-font-family;
-  font-size: 14px;
+  font-size: $default-font-size;
   line-height: 1.5714285;
   border: 1px solid $input-border-color;
   border-radius: $border-radius-default;

@@ -5,7 +5,7 @@
 
 .user-profile__title {
   margin-bottom: 32px;
-  font-size: 28px;
+  font-size: $heading-font-size;
   line-height: 1.4285714;
   font-weight: 600;
   letter-spacing: 0;
@@ -13,7 +13,7 @@
 
 .user-profile__title--secondary {
   margin-bottom: 16px;
-  font-size: 20px;
+  font-size: $default-font-size;
   line-height: 1.6;
 }
 

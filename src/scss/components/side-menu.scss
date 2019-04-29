@@ -1,8 +1,8 @@
-.side-menu {
+.sidebar-menu {
   position: relative;
 }
 
-.side-menu:not(:last-child) {
+.sidebar-menu__list:not(:last-child) {
   padding-bottom: 16px;
   margin-bottom: 16px;
 
@@ -17,30 +17,30 @@
   }
 }
 
-.side-menu__title {
+.sidebar-menu__title {
   display: flex;
   align-items: center;
   padding: 6px 0 6px 16px;
   color: $secondary-text-color;
 }
 
-.side-menu__title-icon {
+.sidebar-menu__title-icon {
   flex-shrink: 0;
   margin-right: 8px;
 }
 
-.side-menu__title-text {
-  font-size: 12px;
+.sidebar-menu__title-text {
+  font-size: $font-size-sm;
   line-height: 1.6666667;
   text-transform: uppercase;
   @include truncate-text
 }
 
-.side-menu__link {
+.sidebar-menu__link {
   display: block;
   padding: 6px 0 6px 40px;
   color: $secondary-text-color;
-  font-size: 12px;
+  font-size: $font-size-sm;
   line-height: 1.6666667;
   text-decoration: none;
   border-radius: $border-radius-default;
@@ -53,8 +53,8 @@
   }
 }
 
-.side-menu__link--active,
-.side-menu__link--active:focus,
-.side-menu__link--active:hover {
+.sidebar-menu__link--active,
+.sidebar-menu__link--active:focus,
+.sidebar-menu__link--active:hover {
   background-color: $side-menu-link-active-bg-color;
 }
